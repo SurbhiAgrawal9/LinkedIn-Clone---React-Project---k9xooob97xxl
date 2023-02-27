@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import "./css/Post.css"
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
 import CommentIcon from '@mui/icons-material/Comment';
 import ShareIcon from '@mui/icons-material/Share';
 import SendIcon from '@mui/icons-material/Send';
@@ -11,6 +12,11 @@ import SendIcon from '@mui/icons-material/Send';
 function Post({ name, description, message, photoURl, vari }) {
 
     const [username, setUsername] = useState(localStorage.getItem("name"));
+    const [like, setLike] = useState(false);
+
+
+
+
 
     return (
         <div className='posts'>
@@ -33,9 +39,11 @@ function Post({ name, description, message, photoURl, vari }) {
 
             <div className="post_footer">
                 <div className="post_footer_option">
-
-                    <ThumbUpAltIcon />
-                    <span>Like</span>
+                    {
+                        like ? <ThumbUpAltIcon style={{ color: 'blue' }} /> :
+                            <ThumbDownAltIcon style={{ color: 'red' }} />
+                    }
+                    <span onClick={() => setLike(!like)}>{like ? <span>Like</span> : <span>Dislike</span>}</span>
 
                 </div>
                 <div className="post_footer_option">
@@ -57,8 +65,8 @@ function Post({ name, description, message, photoURl, vari }) {
 
                 </div>
 
-              
-          
+
+
 
             </div>
         </div>
