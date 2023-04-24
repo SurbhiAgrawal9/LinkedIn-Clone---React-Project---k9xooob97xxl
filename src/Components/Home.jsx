@@ -3,6 +3,8 @@ import Header from '../Header'
 import Sidebar from '../Sidebar';
 import Feed from '../Feed';
 import Widget from '../Widget';
+import '../css/Home.css'
+
 
 function Home() {
     return (
@@ -14,6 +16,7 @@ function Home() {
                 <Sidebar />
                 <Feed />
                 <Widget />
+
             </div>
         </div>
 

@@ -1,6 +1,6 @@
 
 import { Avatar } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import "./css/Post.css"
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
@@ -8,11 +8,15 @@ import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
 import CommentIcon from '@mui/icons-material/Comment';
 import ShareIcon from '@mui/icons-material/Share';
 import SendIcon from '@mui/icons-material/Send';
+import Comment from './features/Comment';
 
-function Post({ name, description, message, photoURl, vari }) {
+function Post({ name, description, message, photoURl, vari, index }) {
 
     const [username, setUsername] = useState(localStorage.getItem("name"));
     const [like, setLike] = useState(false);
+    const [comment, setComment] = useState(false);
+
+
 
 
 
@@ -34,7 +38,7 @@ function Post({ name, description, message, photoURl, vari }) {
 
 
             <div className="post_body">
-                <p>{message}</p>
+                <p>{message.comment}</p>
             </div>
 
             <div className="post_footer">
@@ -49,7 +53,8 @@ function Post({ name, description, message, photoURl, vari }) {
                 <div className="post_footer_option">
 
                     <CommentIcon />
-                    <span>Comment</span>
+                    <span onClick={() => setComment(!comment)}>Comment</span>
+
 
                 </div>
                 <div className="post_footer_option">
@@ -69,6 +74,9 @@ function Post({ name, description, message, photoURl, vari }) {
 
 
             </div>
+            {
+                comment && <Comment />
+            }
         </div>
     )
 }

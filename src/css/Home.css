@@ -1,0 +1,15 @@
+.app_wrapper {
+    width: 100vw;
+    height: 600px;
+    /* background-color: rgb(244, 240, 240); */
+
+
+}
+
+.app_body {
+
+    display: flex;
+    /* gap: 100px; */
+
+
+}

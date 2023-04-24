@@ -6,6 +6,7 @@ import TodayIcon from '@mui/icons-material/Today';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import "./css/Feed.css"
 import Post from './Post';
+import { v4 as uuidv4 } from 'uuid';
 // import firebase from "firebase";
 // import { db } from './firebase';
 
@@ -16,7 +17,11 @@ function Feed() {
 
     const submitPost = (e) => {
         e.preventDefault();
-        setPost([input, ...post])
+
+        let arrName = [...post]
+        const temp = { comment: input, click: false, postId: uuidv4() };
+        arrName.push(temp);
+        setPost(arrName)
 
         alert("submit");
         // db.collection("posts").add({
@@ -74,9 +79,9 @@ function Feed() {
             </div>
 
             {
-                post.map(item => (
+                post.map((item, index) => (
 
-                    <Post name={user} description="This is test" message={item} photoURL="https://www.google.com/imgres?imgurl=https%3A%2F%2Ftechtrickseo.com%2Fwp-content%2Fuploads%2F2019%2F11%2FasfDFHJDKFHDFJH.jpg&imgrefurl=https%3A%2F%2Ftechtrickseo.com%2Fgirls-stylish-profile-pics-dp-whatsapp-facebook-instagram%2F&tbnid=bRyF8RKYhbl-zM&vet=12ahUKEwij-8f2haL9AhXlitgFHaDxArAQMyg-egQIARB9..i&docid=k-ZjNMf5sYSHrM&w=469&h=595&q=image%20profile%20pic%20girl&ved=2ahUKEwij-8f2haL9AhXlitgFHaDxArAQMyg-egQIARB9" />
+                    <Post name={user} description="This is test" index={index} message={item} photoURL="https://www.google.com/imgres?imgurl=https%3A%2F%2Ftechtrickseo.com%2Fwp-content%2Fuploads%2F2019%2F11%2FasfDFHJDKFHDFJH.jpg&imgrefurl=https%3A%2F%2Ftechtrickseo.com%2Fgirls-stylish-profile-pics-dp-whatsapp-facebook-instagram%2F&tbnid=bRyF8RKYhbl-zM&vet=12ahUKEwij-8f2haL9AhXlitgFHaDxArAQMyg-egQIARB9..i&docid=k-ZjNMf5sYSHrM&w=469&h=595&q=image%20profile%20pic%20girl&ved=2ahUKEwij-8f2haL9AhXlitgFHaDxArAQMyg-egQIARB9" />
 
 
                 ))

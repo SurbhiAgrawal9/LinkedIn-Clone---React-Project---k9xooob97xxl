@@ -7,6 +7,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import MessageIcon from '@mui/icons-material/Message';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { Link } from 'react-router-dom';
 
 // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 // import { Avatar } from '@material-ui/core'
@@ -22,7 +23,7 @@ function Header() {
             <div className="header_left">
                 <div className="header_logo">
                     <img src='https://cdn-icons-png.flaticon.com/512/3536/3536505.png' />
-                    
+
                 </div>
                 <div className="header_search">
                     <SearchIcon />
@@ -32,10 +33,10 @@ function Header() {
 
             <div className="header_right">
                 <HeaderOptions Icon={HomeIcon} title="Home" />
-                <HeaderOptions Icon={PeopleIcon} title="My Network" />
-                <HeaderOptions Icon={BusinessCenterIcon} title="Job" />
-                <HeaderOptions Icon={MessageIcon} title="Messaging" />
-                <HeaderOptions Icon={NotificationsIcon} title="Notifications" />
+                <Link to="/mynetwork"><HeaderOptions Icon={PeopleIcon} title="My Network" /></Link>
+                <Link to="/jobs"><HeaderOptions Icon={BusinessCenterIcon} title="Job" /></Link>
+                <Link to="/Messaging"><HeaderOptions Icon={MessageIcon} title="Messaging" /></Link>
+                <Link to="/Notification"><HeaderOptions Icon={NotificationsIcon} title="Notifications" /></Link>
                 <HeaderOptions avatar={Avatar} title={username} />
             </div>
         </div>
