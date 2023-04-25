@@ -48,7 +48,6 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-
 }
 
 .feed_options .option {
@@ -58,14 +57,10 @@
     font-size: 14px;
     border-radius: 5px;
     padding: 10px 10px;
-
 }
 
-
 .feed_options .option:hover {
-
     background-color: #eee;
-
 }
 
 .feed_options .option svg {

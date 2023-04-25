@@ -22,103 +22,12 @@ body {
     margin: 10px 0px 0px 70px;
 }
 
-/* .input1 {
-    height: 35px;
-    width: 17%;
-    margin: 10px 0px 0px 10px;
-    border: 0;
-    background-color: aliceblue;
-} */
-
-/* .faIconsIcon {
-    margin: 10px 20px 10px 190px;
-    font-size: 28px;
-    color: grey;
-} */
-
-/* .faIconsIcon p {
-    font-size: 13px;
-    font-family: sans-serif;
-} */
-
-/* .faIcons {
-    margin: 10px 15px 10px 39px;
-    font-size: 25px;
-    color: grey;
-}
-
-.faIcons p {
-    font-size: 13px;
-    font-family: sans-serif;
-}
-
-.homeIcon {
-    margin-left: -4px;
-}
-
-.networkIcon {
-    margin-left: -16px;
-} */
-
-/* .msgIcon {
-    margin-left: -16px;
-
-}
-
-.notificationsIcon {
-    margin-left: -16px;
-
-}
-
-.meIcon {
-    margin-left: 4px;
-} */
-
-/* .navStart button {
-    height: 40px;
-    width: 4%;
-    border-radius: 15px;
-    border: 1px solid grey;
-    margin: 7px 0px 0px 5px;
-    background-color: #0A66C2;
-    color: #fff;
-
-} */
-
 .networkLink {
     height: 100vh;
     width: 100%;
     display: flex;
     background-color: aliceblue;
 }
-
-/* .networkLeft {
-    height: 500px;
-    width: 23%;
-    border: 1px solid rgb(171, 166, 166);
-    background-color: #fff;
-    margin: 20px 20px 0px 60px;
-    border-radius: 10px;
-} */
-
-/* .networkLeft h3 {
-    margin: 10px 0px 5px 15px;
-
-} */
-
-/* .IconsInNetwork {
-    font-size: 20px;
-    color: rgb(95, 91, 91);
-    margin: 15px 0px 10px 15px;
-}
-
-.IconsInNetwork span {
-    margin-left: 15px;
-}
-
-.IconsInNetwork p {
-    margin: -17px 0px 0px 240px;
-} */
 
 .networkRight {
     height: 100vh;

@@ -12,7 +12,7 @@ const Comment = () => {
         // alert("yes")
 
 
-        // let temparr = []
+
         let temp = { message: input, useName: localStorage.getItem("name") }
         setComment([temp, ...comment])
 

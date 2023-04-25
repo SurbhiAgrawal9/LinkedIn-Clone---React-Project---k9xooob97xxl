@@ -7,9 +7,6 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import "./css/Feed.css"
 import Post from './Post';
 import { v4 as uuidv4 } from 'uuid';
-// import firebase from "firebase";
-// import { db } from './firebase';
-
 function Feed() {
     const [input, setInput] = useState();
     const [post, setPost] = useState([]);

@@ -8,15 +8,10 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import MessageIcon from '@mui/icons-material/Message';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Link } from 'react-router-dom';
-
-// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-// import { Avatar } from '@material-ui/core'
 import { Avatar } from '@mui/material';
 
 function Header() {
-
     const [username, setUsername] = useState(localStorage.getItem("name"));
-
 
     return (
         <div className='header'>

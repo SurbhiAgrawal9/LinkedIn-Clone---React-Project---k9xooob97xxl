@@ -5,12 +5,9 @@ import Feed from '../Feed';
 import Widget from '../Widget';
 import '../css/Home.css'
 
-
 function Home() {
     return (
-
         <div className='app_wrapper'>
-
             <Header />
             <div className="app_body">
                 <Sidebar />

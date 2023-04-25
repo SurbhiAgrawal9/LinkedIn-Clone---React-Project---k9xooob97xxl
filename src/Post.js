@@ -16,12 +16,6 @@ function Post({ name, description, message, photoURl, vari, index }) {
     const [like, setLike] = useState(false);
     const [comment, setComment] = useState(false);
 
-
-
-
-
-
-
     return (
         <div className='posts'>
             <div className="post_header">
@@ -69,9 +63,6 @@ function Post({ name, description, message, photoURl, vari, index }) {
                     <span>Send</span>
 
                 </div>
-
-
-
 
             </div>
             {
