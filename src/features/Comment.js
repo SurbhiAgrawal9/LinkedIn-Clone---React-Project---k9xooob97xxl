@@ -9,7 +9,7 @@ const Comment = () => {
 
     const postComment = (e) => {
         e.preventDefault();
-        alert("yes")
+        // alert("yes")
 
 
         // let temparr = []
@@ -28,7 +28,7 @@ const Comment = () => {
             </div>
 
             <div>{comment.map((item) => <div>
-            <span>{item.useName}</span> <br />
+                <span>{item.useName}</span> <br />
                 <span>{item.message}</span>
             </div>)} </div>
         </div >

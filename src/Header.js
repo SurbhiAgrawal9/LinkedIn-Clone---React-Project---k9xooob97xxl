@@ -32,7 +32,7 @@ function Header() {
             </div>
 
             <div className="header_right">
-                <HeaderOptions Icon={HomeIcon} title="Home" />
+                <Link to="/home"><HeaderOptions Icon={HomeIcon} title="Home" /></Link>
                 <Link to="/mynetwork"><HeaderOptions Icon={PeopleIcon} title="My Network" /></Link>
                 <Link to="/jobs"><HeaderOptions Icon={BusinessCenterIcon} title="Job" /></Link>
                 <Link to="/Messaging"><HeaderOptions Icon={MessageIcon} title="Messaging" /></Link>
